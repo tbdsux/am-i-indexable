@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "build": "yarn build-css && rollup -c",
+    "dev": "yarn dev-css && rollup -c -w",
     "start": "sirv public",
     "dev-css": "postcss tailwind.css -o public/style.css",
     "build-css": "NODE_ENV=production postcss tailwind.css -o public/style.css"
