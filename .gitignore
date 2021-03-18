@@ -6,3 +6,6 @@ venv
 .vercel
 
 .vscode
+
+# ignore tailwind dev css
+public/style.css
