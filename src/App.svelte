@@ -38,7 +38,7 @@
 </script>
 
 <main>
-	<div class="py-32 w-4/5 mx-auto text-center">
+	<div class="py-24 w-4/5 mx-auto text-center">
 		<div>
 			<h1 class="font-black tracking-wide text-6xl text-gray-600">
 				Am I Indexable?
