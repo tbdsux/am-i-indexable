@@ -7,7 +7,7 @@
 	// init search-results
 	let qResults = [];
 
-	let searchEngines = ["Google", "Bing", "DuckDuckGo"];
+	let searchEngines = ["Google", "Bing", "DuckDuckGo", "Ask"];
 
 	function handleSearch() {
 		qResults = []; // reset results

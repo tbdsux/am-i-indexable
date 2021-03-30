@@ -1,10 +1,11 @@
-from hanapin import Google, Bing, DuckDuckGo
+from hanapin import Google, Bing, DuckDuckGo, Ask
 
 # define search engines
 __SEARCH_ENGINES = {
     "google": Google,
     "bing": Bing,
-    "duckduckgo": DuckDuckGo
+    "duckduckgo": DuckDuckGo,
+    "ask": Ask
 }
 
 
