@@ -23,6 +23,6 @@
     "autoprefixer": "^10.2.5",
     "postcss-cli": "^8.3.1",
     "sirv-cli": "^1.0.0",
-    "tailwindcss": "^2.0.4"
+    "tailwindcss": "2.1.2"
   }
 }
