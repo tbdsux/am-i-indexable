@@ -1,9 +1,10 @@
 module.exports = {
-  purge: ['./src/*.svelte'],
+  purge: ["./src/*.svelte"],
+  mode: "jit",
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['"Fira Sans"', 'sans-serif'],
+      sans: ['"Fira Sans"', "sans-serif"],
     },
     extend: {},
   },
@@ -11,4 +12,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};

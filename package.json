@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "build": "yarn build-css && rollup -c",
-    "dev": "yarn dev-css && rollup -c -w",
+    "dev": "concurrently 'yarn dev-css' 'rollup -c -w'",
     "start": "sirv public",
-    "dev-css": "postcss tailwind.css -o public/style.css",
+    "dev-css": "postcss tailwind.css -o public/style.css --watch",
     "build-css": "NODE_ENV=production postcss tailwind.css -o public/style.css"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "concurrently": "^6.2.0",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
@@ -20,9 +21,10 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
     "postcss-cli": "^8.3.1",
     "sirv-cli": "^1.0.0",
-    "tailwindcss": "^2.0.4"
+    "tailwindcss": "^2.1.4"
   }
 }
