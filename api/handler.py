@@ -5,7 +5,7 @@ __SEARCH_ENGINES = {
     "google": Google,
     "bing": Bing,
     "duckduckgo": DuckDuckGo,
-    "ask": Ask
+    "ask": Ask,
 }
 
 
@@ -21,8 +21,4 @@ def search(website: str, query: str):
 
 
 def validate(query: str, results: list) -> bool:
-    for i in results:
-        if query in i["link"]:
-            return True
-
-    return False
+    return any(query in i["link"] for i in results)
